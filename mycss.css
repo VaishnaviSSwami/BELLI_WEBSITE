@@ -5,11 +5,31 @@
 body{
 	margin: 0px;
 }
+loginbox{
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+
+header{
+	background: #000080;
+	padding: 8px 20px 6px 40px;
+	height: 30px;
+}
+
 .sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #84b4cc;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -25,20 +45,21 @@ body{
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #04AA6D;
+  background-color: #000080;
   color: white;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-  background-color: #555;
+  background-color: rgb(20, 20, 20);
   color: white;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
+  margin-left: 180px;
+  margin-right: 0px;
+  padding: 1px 18px;
   height: 1000px;
 }
 
@@ -52,6 +73,8 @@ div.content {
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
 }
+
+
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
