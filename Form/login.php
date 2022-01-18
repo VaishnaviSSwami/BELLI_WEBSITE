@@ -6,8 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+<div class="sidebar">
+    <img src="hfhlogo.PNG" height="50" width="50"/><br><br><br>
+  
+    <a class href="signup.php">SIGNUP</a><br>
+    <a class="active" href="login.php">LOGIN</a>
+    
+  </div>
+
+
 <div class="container">
 	<div class="row">
 		<div class="col-sm-4">
