@@ -28,14 +28,18 @@
  	<form action="login_process.php" method="POST">
   <div class="form-group">
  <img src="belli.png" alt="BELLI" class="logo img-fluid"> <br>
-<?php 
+ <?php 
 if(isset($_GET['loginerror'])) {
 	$loginerror=$_GET['loginerror'];
 }
  if(!empty($loginerror)){  echo '<p class="errmsg">Invalid login credentials, Please Try Again..</p>'; } ?>
 
-    <label class="label_txt">Restraunt Offical Email </label>
-    <input type="text" name="login_var" value="<?php if(!empty($loginerror)){ echo  $loginerror; } ?>" class="form-control" required="">
+     <form action ="login_process.php" method="POST">
+		 <div class ="form-group">
+
+    <label class="label_txt">Email </label>
+    <input type="email" name="email" value="<?php if(!empty($loginerror)){ echo  $loginerror; } ?>" class="form-control" required="">
+
   </div>
   <div class="form-group">
     <label class="label_txt">Password </label>

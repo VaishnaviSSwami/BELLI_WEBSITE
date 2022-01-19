@@ -78,10 +78,14 @@ if(strlen($email)>50){  // Max
          if(strlen($password)>20){ // Max 
             $error[] = 'Password: Max length 20 Characters Not allowed';
         }
-          $sql="select * from registration where ( email='$email');";
+          $sql="select * from registration where (rname='$rname' or email='$email');";
       $res=mysqli_query($dbc,$sql);
    if (mysqli_num_rows($res) > 0) {
-$row = mysqli_fetch_assoc($res);
+$row = mysqli_fetch_assoc($res);           
+if($rname==$row['rname'])
+{
+      $error[] ='Restraunt  alredy Exists.';
+     }
 
      
        if($email==$row['email'])
@@ -90,11 +94,10 @@ $row = mysqli_fetch_assoc($res);
           } 
       }
          if(!isset($error)){ 
-    
-           $options = array("cost"=>4);
-    $password = password_hash($password,PASSWORD_BCRYPT,$options);
+          $date=date('Y-m-d');
+          $password = md5($password);
             
-           $result = mysqli_query($dbc,"INSERT into registration values('','$rname','$address','$phone','$email','$password')");
+           $result = mysqli_query($dbc,"INSERT into registration values('','$rname','$address','$email','$password','$phone','$date')");
            if($result)
     {
      $done=2; 
