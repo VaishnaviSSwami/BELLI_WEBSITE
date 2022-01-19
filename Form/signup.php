@@ -50,17 +50,17 @@ if(strlen($address)<6){ // Minimum
 if(strlen($address)>50){  // Max 
       $error[] = 'Last Name: Max length 50 Characters Not allowed';
         }
-if(!preg_match("/^[A-Za-z _]*[A-Za-z ]+[A-Za-z _]*$/", $address)){
-            $error[] = 'Invalid Entry Address! Please Enter letters without any Digit or special symbols like ( 1,2,3#,$,%,&,*,!,~,`,^,-,)';
+if(!preg_match('/[A-Za-z0-9\-\\,.]+/', $address)){
+            $error[] = 'Invalid Entry Address! ';
               }    
       if(strlen($phone)<10){ // Change Minimum Lenghth   
-            $error[] = 'Please enter Username using 10 digits atleast.';
+            $error[] = 'Please enter Number using 10 digits atleast.';
         }
   if(strlen($phone)>12){ // Change Max Length 
             $error[] = 'Phone Number: Max length 12 Digits Not allowed';
         }
-  if(!preg_match("/^^[^0-9][a-z0-9]+([_-]?[a-z0-9])*$/", $phone)){
-            $error[] = 'Invalid Entry for Username. Enter lowercase letters without any space and No number at the start- Eg - myusername, okuniqueuser or myusername123';
+  if(!preg_match("/^[0-9]*$/", $phone)){
+            $error[] = 'Invalid Entry for Phone Number! Enter Digits without any space and No number at the start- Eg - 7738417056';
         }  
 if(strlen($email)>50){  // Max 
             $error[] = 'Email: Max length 50 Characters Not allowed';
@@ -78,7 +78,7 @@ if(strlen($email)>50){  // Max
          if(strlen($password)>20){ // Max 
             $error[] = 'Password: Max length 20 Characters Not allowed';
         }
-          $sql="select * from users where ( email='$email');";
+          $sql="select * from registration where ( email='$email');";
       $res=mysqli_query($dbc,$sql);
    if (mysqli_num_rows($res) > 0) {
 $row = mysqli_fetch_assoc($res);
@@ -90,12 +90,11 @@ $row = mysqli_fetch_assoc($res);
           } 
       }
          if(!isset($error)){ 
-              $date=date('Y-m-d');
-            $options = array("cost"=>4);
+    
+           $options = array("cost"=>4);
     $password = password_hash($password,PASSWORD_BCRYPT,$options);
             
-           $result = mysqli_query($dbc,"INSERT into users values('','$rname','$address','$phone','$email','$password','$date')");
-
+           $result = mysqli_query($dbc,"INSERT into registration values('','$rname','$address','$phone','$email','$password')");
            if($result)
     {
      $done=2; 

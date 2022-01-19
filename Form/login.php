@@ -27,7 +27,7 @@
 			<div class="login_form">
  	<form action="login_process.php" method="POST">
   <div class="form-group">
- <img src="" alt="BELLI" class="logo img-fluid"> <br>
+ <img src="belli.png" alt="BELLI" class="logo img-fluid"> <br>
 <?php 
 if(isset($_GET['loginerror'])) {
 	$loginerror=$_GET['loginerror'];
