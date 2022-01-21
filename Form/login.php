@@ -3,6 +3,15 @@
 <html>
 <head><br>
 <title> BELLI RESTRAUNT LOGIN</title>
+<style>
+    	body
+		{
+			background-image: url("images/bg.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+  </style>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="style.css">
@@ -13,7 +22,7 @@
 <div class="sidebar">
     <img src="hfhlogo.PNG" height="50" width="50"/><br><br><br>
   
-    <a class href="signup.php">SIGNUP</a><br>
+    <a href="signup.php">SIGNUP</a>
     <a class="active" href="login.php">LOGIN</a>
     
   </div>

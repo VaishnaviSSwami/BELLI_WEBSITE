@@ -11,7 +11,7 @@ if(isset($_POST['sublogin'])) {
         $row = mysqli_fetch_assoc($res);
         $_SESSION["login_sess"]="1"; 
         $_SESSION["login_email"]= $row['email'];
-        header("location:account.php");
+        header("location:dash_board.html");
     } else { 
         header("location:login.php?loginerror=".$email);
     }

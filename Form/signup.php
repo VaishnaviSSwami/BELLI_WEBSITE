@@ -10,16 +10,14 @@
 
 </head>
 <body>
-
 <div class="sidebar">
     <img src="hfhlogo.PNG" height="50" width="50"/><br><br><br>
-  
-    <a class href="signup.php">SIGNUP</a><br>
-    <a class="active" href="login.php">LOGIN</a>
+    <a class="active" href="signup.php">SIGNUP</a>
+    <a href="login.php">LOGIN</a>
     
   </div>
   
-<div class="container">
+<div class="container" style="background-image: url('bg.jpg'); background-size: 100% 100%;">
   <div class="row">
     <div class="col-sm-4">
     </div>
