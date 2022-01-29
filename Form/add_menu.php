@@ -11,6 +11,7 @@
 
 </head>
 <body>
+
 <div class="sidebar">
     <img src="hfhlogo.PNG" height="50" width="50"/><br><br><br><br><br>
     <a  href="dash_board.html">DASHBOARD</a>
@@ -24,4 +25,6 @@
     </div>
     
   </div>
+</body>
+</html>
   

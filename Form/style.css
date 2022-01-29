@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 body
 { 
-background:#EAE9E5;
+background-image: url("bg.jpg");
+background-position: center;
+background-size: cover;
+backface-visibility: visible;
 margin: 0px;
+padding: 0px;
 } 
 
 
@@ -41,7 +45,7 @@ header{
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(20, 20, 20, 0.3);
   color: white;
 }
 
@@ -53,7 +57,7 @@ div.content {
   margin-right: 0px;
   padding: 0px 0px;
   height: 1000px;
-  background-image: url("images/bg.jpg");
+
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
