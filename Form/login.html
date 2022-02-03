@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php require_once("config.php"); ?>
 <html>
 <head><br>
 <title> BELLI RESTRAUNT LOGIN</title>
@@ -22,8 +21,8 @@
 <div class="sidebar">
     <img src="hfhlogo.PNG" height="50" width="50"/><br><br><br>
   
-    <a href="signup.php">SIGNUP</a>
-    <a class="active" href="login.php">LOGIN</a>
+    <a href="signup.html">SIGNUP</a>
+    <a class="active" href="login.html">LOGIN</a>
     
   </div>
 
@@ -34,20 +33,15 @@
 		</div>
 		<div class="col-sm-4">
 			<div class="login_form">
- 	<form action="login_process.php" method="POST">
+ 	<form action="login_process.html" method="POST">
   <div class="form-group">
  <img src="belli.png" alt="BELLI" class="logo img-fluid"> <br>
- <?php 
-if(isset($_GET['loginerror'])) {
-	$loginerror=$_GET['loginerror'];
-}
- if(!empty($loginerror)){  echo '<p class="errmsg">Invalid login credentials, Please Try Again..</p>'; } ?>
 
-     <form action ="login_process.php" method="POST">
+     
 		 <div class ="form-group">
 
     <label class="label_txt">Email </label>
-    <input type="email" name="email" value="<?php if(!empty($loginerror)){ echo  $loginerror; } ?>" class="form-control" required="">
+    <input type="email" name="email" value="" class="form-control" required="">
 
   </div>
   <div class="form-group">
@@ -56,9 +50,9 @@ if(isset($_GET['loginerror'])) {
   </div>
   <button type="submit" name="sublogin" class="btn btn-primary btn-group-lg form_btn">Login</button>
 </form>
-<p style="font-size: 12px;text-align: center;margin-top: 10px;"><a href="forgot-password.php" style="color: #00376b;">Forgot Password?</a> </p>
+<p style="font-size: 12px;text-align: center;margin-top: 10px;"><a href="forgot-password.html" style="color: #00376b;">Forgot Password?</a> </p>
    <br> 
-    <p>Don't have an account? <a href="signup.php">Sign up</a> </p>
+    <p>Don't have an account? <a href="signup.html">Sign up</a> </p>
 		</div>
 		<div class="col-sm-4">
 		</div>

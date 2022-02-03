@@ -1,19 +1,5 @@
 <!DOCTYPE html>
-<?php require_once("config.php");
-if(!isset($_SESSION["login_sess"])) 
-{
-    header("location:login.php"); 
-}
-  $email=$_SESSION["login_email"];
-  $findresult = mysqli_query($dbc, "SELECT * FROM registration WHERE email= '$email'");
-if($res = mysqli_fetch_array($findresult))
-{
-$phone = $res['phone']; 
-$rname = $res['rname'];   
-$address = $res['address'];  
-$email = $res['email'];  
-}
- ?> 
+
 <html>
 <head>
     <title> My Account - BELLI REGISTRATION</title>
@@ -27,27 +13,27 @@ $email = $res['email'];
         <div class="col-sm-3">
         </div>
         <div class="col-sm-6">
-     <form action="login_process.php" method="POST">
+     <form action="login_process.html" method="POST">
   <div class="login_form">
  <img src="belli.png" alt="BELLI" class="logo img-fluid"> <br> 
-     <p><a href="logout.php"><span style="color:red; float: right;">Logout</span> </a></p>
+     <p><a href="logout.html"><span style="color:red; float: right;">Logout</span> </a></p>
           <p> Welcome! <span style="color:#33CC00"><?php echo $rname; ?></span> </p>
           <table class="table">
           <tr>
               <th>Restraunt's Name: </th>
-              <td><?php echo $rname; ?></td>
+            
           </tr>
           <tr>
               <th>Address </th>
-              <td><?php echo $address; ?></td>
+             
           </tr>
           <tr>
               <th>Phone Number</th>
-              <td><?php echo $phone; ?></td>
+             
           </tr>
            <tr>
               <th>Email </th>
-              <td><?php echo $email; ?></td>
+             
           </tr>
           </table>
         </div>
