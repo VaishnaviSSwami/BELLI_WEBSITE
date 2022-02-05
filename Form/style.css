@@ -28,6 +28,34 @@ header{
   overflow: auto;
 }
 
+.bottom_icon a{
+  display:flex;
+  height: 80px;
+  width: 100px;
+border-radius: 15px;
+color: black;
+padding: 16px;
+text-decoration: none;
+}
+
+/* Active/current link */
+.bottom_icon div a.active {
+background-color: #000080;
+color: white;
+}
+
+/* Links on mouse-over */
+.bbottom-icon a:hover:not(.active) {
+background-color: rgb(20, 20, 20, 0.3);
+color: white;
+}
+.bottom_icon div
+{
+height: 100px;
+  width: 100px; 
+
+}
+
 /* Sidebar links */
 .sidebar a {
   display:block;
