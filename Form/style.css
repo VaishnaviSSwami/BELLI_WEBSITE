@@ -209,16 +209,46 @@ div.content {
   margin: 0 auto;
   display: inline;}
   
-      .action_btn {
+.action_btn {
   width: 900px;
   margin: 0 auto;
   display: inline;}
 
   .topcorner{
     position:absolute;
+    align-items: flex;
     top: 10px;;
     right: 10px;;
    }
+
+   image-preview {
+    width: 400px;
+    min-height: 150px;
+    border: 2px solid #dddddd;
+    margin-top: 15px;
+
+    /* Defualt Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.image-preview__image {
+    display: none;
+    width: 100%;
+}
+
+.wrapper {
+  text-align: center;
+  background-color: #4CAF50;
+}
+
+.button3 {
+  position: absolute;
+  top: 50%;
+}
 
 .button1 {background-color: #4CAF50;} /* Green */
 .button2 {background-color: #008CBA;} /* Blue */

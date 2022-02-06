@@ -67,13 +67,17 @@
   
     </div>
 
-    <div  class ="topcorner" >
-      <p>CHEF Upload Your Dish's Image from your Gallery/Storage</p>
-
-      
-              <input type="file" id="myFile" name="filename">
-              <input type="submit">
-    </div>
+    <br>
+                <label for="photo">Upload Dish Image!</label>
+                <form method=post enctype=multipart/form-data>
+                    <input type=file name=file class="form-control-file" id="exampleInputFile"
+                        aria-describedby="fileHelp">
+                          <br>
+                    <input type=submit value=Upload  type="submit" class="btn btn-success">
+                
+                </form>
+                
+                
 
     
     
@@ -92,7 +96,10 @@
 
       <button name="submit" class="button button2" type="submit"  value="ADD MENU" >ADD MENU </button>
       <button name="submit" class="button button2" type="submit" value="VIEW MENU" >UPDATE </button>
-      <button name="submit" class="button button1" type="submit" value="REFRESH" >REFRESH</button>
+      <button class="wrapper">REFRESH</button>
+      
+        
+      
 
       
 
