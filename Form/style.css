@@ -81,6 +81,14 @@ color: white;
   padding-left: 15px;
 }
 
+.sidebar #signup {
+  padding-left: 15px;
+}
+
+.sidebar #login {
+  padding-left: 15px;
+}
+
 .setting_icon {
   padding-left: 15px;
   padding-bottom: 10px;
