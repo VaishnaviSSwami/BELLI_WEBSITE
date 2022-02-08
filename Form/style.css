@@ -28,16 +28,6 @@ header{
   overflow: auto;
 }
 
-.bottom_icon a{
-  display:flex;
-  height: 80px;
-  width: 100px;
-border-radius: 15px;
-color: black;
-padding: 16px;
-text-decoration: none;
-}
-
 /* Active/current link */
 .bottom_icon div a.active {
 background-color: #000080;
@@ -49,26 +39,65 @@ color: white;
 background-color: rgb(20, 20, 20, 0.3);
 color: white;
 }
-.bottom_icon div
-{
-height: 100px;
-  width: 100px; 
 
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-bottom: 70px;
+}
+
+.image {
+  padding-right: 10px;
+}
+.bottom_icon {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 250px;
+  bottom: 0px;
 }
 
 /* Sidebar links */
 .sidebar a {
   display:block;
-  border-radius: 15px;
   color: black;
-  padding: 16px;
   text-decoration: none;
+}
+
+.sidebar #dashboard {
+  padding-left: 15px;
+}
+
+.sidebar #add_menu {
+  padding-left: 15px;
+}
+
+.sidebar #view_menu {
+  padding-left: 15px;
+}
+
+.sidebar #myprofile {
+  padding-left: 15px;
+}
+
+.setting_icon {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.exit_icon {
+  padding-right: 15px;
+  padding-bottom: 10px;
 }
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #000080;
   color: white;
+}
+
+hr.solid {
+  border-top: 1px solid rgb(255, 255, 255);
 }
 
 /* Links on mouse-over */
