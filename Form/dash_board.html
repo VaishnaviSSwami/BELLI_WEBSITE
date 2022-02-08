@@ -1,34 +1,45 @@
 <!doctype html>
 
 <html>
-    
-<head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
-<title> BELLI RESTRAUNT dashboard</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> 
-<link rel="stylesheet" href="style.css">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <title> BELLI RESTRAUNT dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 
 
 </head>
+
 <body>
-<div class="sidebar">
-    <img src="hfhlogo.PNG" height="50" width="50"/><br><br><br><br><br>
-    <a class="active" href="dash_board.html">DASHBOARD</a><br>
-    <a href="add_menu.html">ADD MENU</a><br>
-    <a href="view_menu.html">VIEW MENU</a><br>
-    <a href="myprofile.html">MY PROFILE</a><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="sidebar">
+    <div class="heading">
+      <div class="image">
+        <img src="images/hfh_logo.jpg" height="80" width="80" />
+      </div>
+      <!-- <div class="title">
+        <h4>Welcome Heet</h4>
+      </div> -->
+    </div>
+    <a id = "dashboard" class="active" href="dash_board.html">DASHBOARD</a>
+    <hr class="solid">
+    <a id = "add_menu" href="add_menu.html">ADD MENU</a>
+    <hr class="solid">
+    <a id = "view_menu" href="view_menu.html">VIEW MENU</a>
+    <hr class="solid">
+    <a id = "myprofile" href="myprofile.html">MY PROFILE</a>
 
     <div class="bottom_icon">
-        &nbsp;
-       
-        <div class="column1" style="padding: 15px;">
-        <a href="setting.html"><img src="images/setting.PNG" height="40" width="40"/></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <a href="signup.html"><img src="images/logout.png" height="40" width="40"/></a>
-        </div>
+      <div class="setting_icon">
+        <a href="setting.html"><img src="images/setting.PNG" height="30" width="30" /></a>
+      </div>
+      <div class="exit_icon">
+        <a href="signup.html"><img src="images/logout.png" height="30" width="30" /></a>
       </div>
     </div>
-  </body>
-  </html>
-  
+  </div>
+</body>
+
+</html>
